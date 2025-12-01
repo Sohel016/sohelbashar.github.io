@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sohel Bashar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+    /* Top navigation bar */
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar a {
+      color: #f5f5f5;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 15px;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main layout */
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 30px;
+    }
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Left column */
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+    h2 {
+      margin-top: 40px;
+      font-size: 22px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+      font-size: 15px;
+    }
+
+    /* Right column (photo) */
+    .profile-photo {
+      text-align: center;
+    }
+    .profile-photo img {
+      max-width: 100%;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .contact {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+    .contact a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .section-divider {
+      margin: 30px 0 10px;
+      border: 0;
+      border-top: 1px solid #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav bar -->
+  <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Notable Projects</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Professional Experience</a>
+    <a href="#awards">Honors & Awards</a>
+    <a href="#teaching">Teaching</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="container">
+    <!-- Left column: text -->
+    <div>
+      <section id="about">
+        <h1>Sohel Bashar</h1>
+        <p>
+          I am an M.Sc. student in <strong>[Department / Program]</strong> at <strong>[University]</strong>,
+          working broadly at the intersection of <strong>machine learning, structural biology,
+          and scientific AI</strong>. My research interests include protein and nucleic-acid modeling,
+          geometric deep learning, spatial transcriptomics, single-cell analysis, and large-scale
+          multimodal models.
+        </p>
+        <p>
+          Previously, I completed my B.Sc. from <strong>BUET</strong>, and I am currently involved in
+          research on <strong>protein language models, structural modeling, and AI for science</strong>.
+          My long-term goal is to build learning systems that help accelerate real scientific discovery.
+        </p>
+
+        <div class="contact">
+          Email: sohelbashar [at] gmail.com<br>
+          Links:
+          <a href="YOUR_CV_LINK_HERE" target="_blank">Curriculum Vitae</a> |
+          <a href="YOUR_GOOGLE_SCHOLAR_LINK_HERE" target="_blank">Google Scholar</a> |
+          <a href="https://github.com/Sohel016" target="_blank">GitHub</a>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <section id="publications">
+        <h2>Publications / Preprints</h2>
+        <ol>
+          <li>
+            <strong>[Paper Title]</strong> — [Authors]. [Conference/Journal], [Year].  
+            <a href="#">[PDF]</a> &nbsp; <a href="#">[Code]</a>
+          </li>
+          <li>
+            <strong>Family-Level Representation Patterns in Protein Language Models</strong> — 
+            [Your Name] et al. NeurIPS FM4LS Workshop, 2025.
+          </li>
+        </ol>
+      </section>
+
+      <section id="projects">
+        <h2>Notable Projects</h2>
+        <ol>
+          <li>
+            <strong>[Project 1 Name]</strong> – short 1–2 line description of what you did,
+            focusing on the core idea and your contribution.
+          </li>
+          <li>
+            <strong>[Project 2 Name]</strong> – another brief description.
+          </li>
+        </ol>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>M.Sc. in [Field]</strong>, [University], [Years]</li>
+          <li><strong>B.Sc. in [Field]</strong>, BUET, [Years]</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>Professional Experience</h2>
+        <ul>
+          <li><strong>[Role]</strong>, [Place], [Dates] – 1–2 lines about what you did.</li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Honors & Awards</h2>
+        <ul>
+          <li>[Scholarship / Award], [Year]</li>
+        </ul>
+      </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul>
+          <li>[Course / role], [Institution], [Year(s)].</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Right column: photo -->
+    <div class="profile-photo">
+      <!-- Replace "photo.jpg" with your real photo filename -->
+      <img src="photo.jpg" alt="Sohel Bashar">
+    </div>
+  </div>
+
+</body>
+</html>
